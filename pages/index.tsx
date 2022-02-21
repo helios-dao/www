@@ -149,7 +149,7 @@ const Home: NextPage = () => {
                   <div className='bg-white border border-solid rounded-md border-slate-200'>
                     <Image src={imgProject1} width={800} height={451} />
                     <div className='py-7 px-9'>
-                      <h3 className='font-semibold text-2xl'>Rooftop Soolar in Pune</h3>
+                      <h3 className='font-semibold text-2xl'>Rooftop Solar in Pune</h3>
                       <p className='mb-6'>Pune, Maharashtra, India</p>
                       <p>Our solar installation in Pune provides clean energy for a mall-multiplex in addition to providing excess energy to the local grid. This 15 year power purchase agreement will reduce our customer&apos;s energy bill by 47% while preventing more than 1,000 tonnes of CO2 emissions per year. This initial installation serves as a proof of concept, demonstrating our ability to effectively deploy capital, build solar, and generate strong returns for our investors.</p>
                     </div>
