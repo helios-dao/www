@@ -9,6 +9,9 @@ module.exports = {
       },
       width: {
         '600': '600px',
+      },
+      backgroundImage: {
+        'yellow-gradient': 'radial-gradient(circle closest-side, rgb(252, 224, 79), rgb(255, 255, 255))'
       }
     },
     fontFamily: {
