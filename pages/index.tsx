@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import React from 'react';
 
 import impactImg from '../public/home/impact.svg';
 import logoImg from '../public/heliosdao-logo.png';
@@ -13,11 +12,11 @@ import tokensImg from '../public/home/tokens.svg';
 import transparencyImg from '../public/home/transparency.svg';
 import votesImg from '../public/home/votes.svg';
 import imgProject1 from '../public/home/project1.png';
-import imgProject2 from '../public/home/project2.png';
+// import imgProject2 from '../public/home/project2.png';
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-white font-sans">
+    <div className="bg-white">
       <Head>
         <title>HeliosDAO</title>
         <meta name="description" content="HeliosDAO: Invest Crypto, Fund Solar, Save Our Climate." />
@@ -28,14 +27,14 @@ const Home: NextPage = () => {
         <div>
           <Image src={logoImg} width={52} height={46} />
         </div>
-        <nav className="text-lg font-serif">
+        <nav className="text-lg font-semibold">
           {/* <a href='#'>Invest</a> */}
         </nav>
       </header>
 
       <main className="">
         <div className="max-w-2xl mx-auto text-center pb-36">
-          <h1 className="font-serif text-7xl mb-4">
+          <h1 className="font-semibold text-7xl mb-4">
             Invest Crypto.<br/>
             Fund Solar.<br/>
             Save Our Climate.
@@ -46,8 +45,8 @@ const Home: NextPage = () => {
           </p>
 
           <p>
-            <a className="bg-yellow rounded-2xl py-2 px-4 text-xl display-inline-block" href='#'>Start Investing</a>
-            <a className="bg-yellow rounded-2xl py-2 px-4 text-xl display-inline-block ml-8" href='https://discord.gg/9sstTzZVFJ' target='_blank' rel='noopener noreferrer nofollow'>Join Discord</a>
+            <a className="bg-yellow rounded-2xl py-2 px-4 text-xl display-inline-block" href='https://www.notion.so/heliosdao/Investment-Process-e27d1ff6a7de4d6981328b990966fa5a' rel='noopener noreferrer nofollow'>Start Investing</a>
+            <a className="bg-yellow rounded-2xl py-2 px-4 text-xl display-inline-block ml-8" href='https://discord.gg/9sstTzZVFJ' rel='noopener noreferrer nofollow'>Join Discord</a>
           </p>
         </div>
 
@@ -59,7 +58,7 @@ const Home: NextPage = () => {
           <div className="container max-w-screen-lg mx-auto pt-20 pb-16">
             <div className="flex gap-16 mb-24 items-center">
               <div className='basis-1/2'>
-                <h3 className="font-serif text-5xl mb-3">Invest in Impact</h3>
+                <h3 className="font-semibold text-5xl mb-3">Invest in Impact</h3>
                 <p>Directly fund high impact solar projects reducing thousands of tonnes of CO2 emissions</p>
               </div>
               <div className="basis-1/2 text-center">
@@ -71,13 +70,13 @@ const Home: NextPage = () => {
                 <Image src={transparencyImg} width='200px' />
               </div>
               <div className='basis-1/2'>
-                <h3 className="font-serif text-5xl mb-3">Maximum Transparency</h3>
+                <h3 className="font-semibold text-5xl mb-3">Maximum Transparency</h3>
                 <p>Track your money in real time, from placement to production to power generation</p>
               </div>
             </div>
             <div className="flex gap-16 mb-24 items-center">
               <div className='basis-1/2'>
-                <h3 className="font-serif text-5xl mb-3">Industry Leading Returns</h3>
+                <h3 className="font-semibold text-5xl mb-3">Industry Leading Returns</h3>
                 <p>Investing in clean energy generates 15%+ APY, safe from the volatility of crypto markets</p>
               </div>
               <div className="basis-1/2 text-center">
@@ -89,20 +88,20 @@ const Home: NextPage = () => {
                 <Image src={powerImg} width='200px' />
               </div>
               <div className='basis-1/2'>
-                <h3 className="font-serif text-5xl mb-3">Power of Crypto</h3>
-                <p>Borderless digital currency allows Helios to invest where big banks feat to tread.</p>
+                <h3 className="font-semibold text-5xl mb-3">Power of Crypto</h3>
+                <p>Borderless digital currency allows Helios to invest where big banks fear to tread.</p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="container max-w-screen-lg mx-auto pt-20 pb-16">
-          <h2 className="font-serif text-5xl text-center mb-16">How It Works</h2>
+          <h2 className="font-semibold text-5xl text-center mb-16">How It Works</h2>
           <div className='flex mb-16 items-center'>
             <div className='basis-1/2 flex'>
-              <p className="font-serif text-3xl pr-12">1</p>
+              <p className="font-semibold text-3xl pr-12">1</p>
               <div>
-                <h3 className="font-serif text-2xl mb-2.5">Community Votes</h3>
+                <h3 className="font-semibold text-2xl mb-2.5">Community Votes</h3>
                 <p className='text-base'>The Helios community votes on which projects are added to Solar Pools based on Impact and Yield</p>
               </div>
             </div>
@@ -112,9 +111,9 @@ const Home: NextPage = () => {
           </div>
           <div className='flex mb-16 items-center'>
             <div className='basis-1/2 flex'>
-              <p className="font-serif text-3xl pr-12">2</p>
+              <p className="font-semibold text-3xl pr-12">2</p>
               <div>
-                <h3 className="font-serif text-2xl mb-2.5">Invest, Profit</h3>
+                <h3 className="font-semibold text-2xl mb-2.5">Invest, Profit</h3>
                 <p className='text-base'>Sunvestors provide capital to Solar Pools to fund real world solar projects and profit from the clean energy generated</p>
               </div>
             </div>
@@ -124,9 +123,9 @@ const Home: NextPage = () => {
           </div>
           <div className='flex mb-16 items-center'>
             <div className='basis-1/2 flex'>
-              <p className="font-serif text-3xl pr-12">3</p>
+              <p className="font-semibold text-3xl pr-12">3</p>
               <div>
-                <h3 className="font-serif text-2xl mb-2.5">Monitor Impact &amp; Returns</h3>
+                <h3 className="font-semibold text-2xl mb-2.5">Monitor Impact &amp; Returns</h3>
                 <p className='text-base'>Monitor the progress of projects, energy produced, carbon offset, and returns in real time with our intuitive dashboard</p>
               </div>
             </div>
@@ -139,30 +138,20 @@ const Home: NextPage = () => {
         <div className="bg-light-yellow py-16">
           <div className='container mx-auto'>
             <div className='text-center'>
-              <h2 className='font-serif text-5xl mb-2'>Our Projects</h2>
+              <h2 className='font-semibold text-5xl mb-2'>Our Projects</h2>
               <p className='mb-12 max-w-sm mx-auto'>HeliosDAO works with experienced solar developers around the world to deploy capital into high impact, high return projects.</p>
             </div>
           </div>
           <div>
             <div className='relative overflow-hidden'>
-              <div className='flex w-600 mx-auto'>
+              <div className='flex w-800 mx-auto'>
                 <div className='px-10 min-w-full'>
                   <div className='bg-white border border-solid rounded-md border-slate-200'>
-                    <Image src={imgProject1} />
+                    <Image src={imgProject1} width={800} height={451} />
                     <div className='py-7 px-9'>
-                      <h3 className='font-serif text-4xl'>Project title</h3>
-                      <p className='mb-6'>Uttar Pradesh, India</p>
-                      <p>This is a little blurb about the project. It&apos;s really a nice bit of info that helps an investor understand what is going on with this project. Perhaps it links to a whole project page that shows you more detail on this project. This is a little blurb about the project. It&apos;s really a nice bit of info that helps an investor understand what is going on with this project. Perhaps it links to a whole project page</p>
-                    </div>
-                  </div>
-                </div>
-                <div className='px-10 min-w-full'>
-                  <div className='bg-white border border-solid rounded-md border-slate-200 scale-75'>
-                    <Image src={imgProject2} />
-                    <div className='py-7 px-9'>
-                      <h3 className='font-serif text-4xl'>Project title</h3>
-                      <p className='mb-6'>Uttar Pradesh, India</p>
-                      <p>This is a little blurb about the project. It&apos;s really a nice bit of info that helps an investor understand what is going on with this project. Perhaps it links to a whole project page that shows you more detail on this project. This is a little blurb about the project. It&apos;s really a nice bit of info that helps an investor understand what is going on with this project. Perhaps it links to a whole project page</p>
+                      <h3 className='font-semibold text-4xl'>Rooftop Soolar in Pune</h3>
+                      <p className='mb-6'>Pune, Maharashtra, India</p>
+                      <p>Our solar installation in Pune provides clean energy for a mall-multiplex in addition to providing excess energy to the local grid. This 15 year power purchase agreement will reduce our customer&apos;s energy bill by 47% while preventing more than 1,000 tonnes of CO2 emissions per year. This initial installation serves as a proof of concept, demonstrating our ability to effectively deploy capital, build solar, and generate strong returns for our investors.</p>
                     </div>
                   </div>
                 </div>

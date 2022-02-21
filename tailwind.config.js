@@ -8,7 +8,7 @@ module.exports = {
         'dark-blue': '#14304D',
       },
       width: {
-        '600': '600px',
+        '800': '800px',
       },
       backgroundImage: {
         'yellow-gradient': 'radial-gradient(circle closest-side, rgb(252, 224, 79), rgb(255, 255, 255))'
