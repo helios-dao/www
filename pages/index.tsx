@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='flex justify-between pt-4 px-6 pb-48 bg-yellow-gradient bg-no-repeat bg-bottom bg-[length:100%_400%]'>
+      <header className='flex justify-between pt-4 px-6 pb-6 sm:pb-48 bg-yellow-gradient bg-no-repeat bg-bottom bg-[length:100%_400%]'>
         <div>
           <Image src={logoImg} width={52} height={46} />
         </div>
@@ -34,10 +34,16 @@ const Home: NextPage = () => {
 
       <main className="">
         <div className="max-w-3xl mx-auto text-center pb-36 px-6">
-          <h1 className="font-semibold text-7xl mb-4">
-            Invest Crypto.<br/>
-            Fund Solar.<br/>
-            Save Our Climate.
+          <h1 className="font-semibold text-7xl mb-6">
+            <div className='mb-4'>
+              Invest Crypto
+            </div>
+            <div className='mb-4'>
+              Fund Solar
+            </div>
+            <div>
+              Save Our Climate
+            </div>
           </h1>
 
           <p className="mb-16 text-2xl">
