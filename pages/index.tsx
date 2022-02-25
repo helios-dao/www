@@ -51,8 +51,7 @@ const Home: NextPage = () => {
           </p>
 
           <p>
-            <a className="bg-yellow rounded-2xl py-2 px-4 text-xl display-inline-block" href='https://www.notion.so/heliosdao/Investment-Process-e27d1ff6a7de4d6981328b990966fa5a' rel='noopener noreferrer nofollow'>Start Investing</a>
-            <a className="bg-yellow rounded-2xl py-2 px-4 text-xl display-inline-block ml-8" href='https://discord.gg/9sstTzZVFJ' rel='noopener noreferrer nofollow'>Join Discord</a>
+            <a className="bg-yellow rounded-2xl py-2 px-4 text-xl display-inline-block" href='https://discord.gg/9sstTzZVFJ' rel='noopener noreferrer nofollow'>Join Discord</a>
           </p>
         </div>
 
