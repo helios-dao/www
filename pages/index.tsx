@@ -2,182 +2,155 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 
-import impactImg from '../public/home/impact.svg';
-import logoImg from '../public/heliosdao-logo.png';
-import monitorImg from '../public/home/monitor.svg';
-import powerImg from '../public/home/power.svg';
-import profitImg from '../public/home/profit.svg';
-import returnsImg from '../public/home/returns.svg';
-import tokensImg from '../public/home/tokens.svg';
-import transparencyImg from '../public/home/transparency.svg';
-import votesImg from '../public/home/votes.svg';
-import imgProject1 from '../public/home/project1.png';
-// import imgProject2 from '../public/home/project2.png';
+import logoImg from '../public/logo@2x.png';
+import logoBigImg from '../public/logo1@2x.png';
+import planetImg from '../public/earth@2x.png';
+import weightImg from '../public/weight@2x.png';
+import walletImg from '../public/wallet@2x.png';
+import tickImg from '../public/tick@2x.png';
+import rocketImg from '../public/rocket@2x.png';
 
 const Home: NextPage = () => {
   return (
     <div className="bg-white">
       <Head>
         <title>HeliosDAO</title>
-        <meta name="description" content="HeliosDAO: Invest Crypto, Fund Solar, Save Our Climate." />
+        <meta name="description" content="HeliosDAO: The evolution of solar, powered by crypto." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='flex justify-between pt-4 px-6 pb-6 sm:pb-48 bg-yellow-gradient bg-no-repeat bg-bottom bg-[length:100%_400%]'>
-        <div>
-          <Image src={logoImg} width={52} height={46} />
+      <header className='bg-purple-gradient pt-10'>
+        <div className='container mx-auto flex items-center'>
+          <Image src={logoImg} width={72} height={72} />
         </div>
-        <nav className="text-lg font-semibold">
-          {/* <a href='#'>Invest</a> */}
-        </nav>
       </header>
 
       <main className="">
-        <div className="max-w-3xl mx-auto text-center pb-36 px-6">
-          <h1 className="font-semibold text-7xl mb-6">
-            <div className='mb-4'>
-              Invest Crypto
-            </div>
-            <div className='mb-4'>
-              Fund Solar
-            </div>
+        <section className='flex items-center container mx-auto max-w-5xl'>
+          <div className='max-w-lg mr-10'>
+            <h1 className="text-6xl mb-4 uppercase font-semibold">The evolution of solar, powered by crypto</h1>
+            <p className='mb-4'>Helios enables anyone anywhere to profitably fight climate change. Fund high-impact solar projects around the world today!</p>
             <div>
-              Save Our Climate
-            </div>
-          </h1>
-
-          <p className="mb-16 text-2xl">
-            Stable crypto returns from real world solar projects around the globe.
-          </p>
-
-          <p>
-            <a className="bg-yellow rounded-2xl py-2 px-4 text-xl display-inline-block" href='https://discord.gg/9sstTzZVFJ' rel='noopener noreferrer nofollow' target='_blank'>Learn more</a>
-            <a className="bg-yellow rounded-2xl py-2 px-4 text-xl display-inline-block ml-8" href='https://discord.gg/9sstTzZVFJ' rel='noopener noreferrer nofollow' target='_blank'>Join Discord</a>
-          </p>
-        </div>
-
-        <div className='px-8'>
-          <Image src={tokensImg} />
-        </div>
-
-        <div className='bg-gradient-to-b from-white to-light-yellow'>
-          <div className="container max-w-screen-lg mx-auto pt-20 pb-16 px-6">
-            <div className="flex sm:gap-0 gap-2 mb-12 sm:mb-24 sm:items-center flex-col sm:flex-row">
-              <div className="basis-1/2 sm:order-2 sm:text-center">
-                <Image src={impactImg} width='200px' />
-              </div>
-              <div className='basis-1/2'>
-                <h3 className="font-semibold text-2xl mb-3">Invest in Impact</h3>
-                <p>Directly fund high impact solar projects reducing thousands of tonnes of CO2 emissions</p>
-              </div>
-            </div>
-            <div className="flex sm:gap-0 gap-2 mb-12 sm:mb-24 sm:items-center flex-col sm:flex-row">
-              <div className="basis-1/2 sm:text-center">
-                <Image src={transparencyImg} width='200px' />
-              </div>
-              <div className='basis-1/2'>
-                <h3 className="font-semibold text-2xl mb-3">Maximum Transparency</h3>
-                <p>Track your money in real time, from placement to production to power generation</p>
-              </div>
-            </div>
-            <div className="flex sm:gap-0 gap-2 mb-12 sm:mb-24 sm:items-center flex-col sm:flex-row">
-              <div className="basis-1/2 sm:order-2 sm:text-center">
-                <Image src={returnsImg} width='200px' />
-              </div>
-              <div className='basis-1/2'>
-                <h3 className="font-semibold text-2xl mb-3">Industry Leading Returns</h3>
-                <p>Investing in clean energy generates 15%+ APY, safe from the volatility of crypto markets</p>
-              </div>
-            </div>
-            <div className="flex sm:gap-0 gap-2 sm:items-center flex-col sm:flex-row">
-              <div className="basis-1/2 sm:text-center">
-                <Image src={powerImg} width='200px' />
-              </div>
-              <div className='basis-1/2'>
-                <h3 className="font-semibold text-2xl mb-3">Power of Crypto</h3>
-                <p>Borderless digital currency allows Helios to invest where big banks fear to tread.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container max-w-screen-lg mx-auto pt-20 pb-16 px-6">
-          <h2 className="font-semibold text-5xl text-center mb-16">How It Works</h2>
-          <div className='flex mb-16 items-center flex-col sm:flex-row'>
-            <div className='basis-1/2 text-center mb-6 sm:order-2 sm:mb-0'>
-              <Image src={votesImg} width='300px' />
-            </div>
-            <div className='basis-1/2 flex'>
-              <p className="font-semibold text-2xl pr-12">1</p>
-              <div>
-                <h3 className="font-semibold text-2xl mb-2.5">Community Votes</h3>
-                <p className='text-base'>The Helios community votes on which projects are added to Solar Pools based on Impact and Yield</p>
-              </div>
-            </div>
-          </div>
-          <div className='flex mb-16 items-center flex-col sm:flex-row'>
-            <div className='basis-1/2 text-center mb-6 sm:order-2 sm:mb-0'>
-              <Image src={profitImg} width='300px' />
-            </div>
-            <div className='basis-1/2 flex'>
-              <p className="font-semibold text-2xl pr-12">2</p>
-              <div>
-                <h3 className="font-semibold text-2xl mb-2.5">Invest, Profit</h3>
-                <p className='text-base'>Sunvestors provide capital to Solar Pools to fund real world solar projects and profit from the clean energy generated</p>
-              </div>
-            </div>
-          </div>
-          <div className='flex mb-16 items-center flex-col sm:flex-row'>
-            <div className='basis-1/2 text-center mb-6 sm:order-2 sm:mb-0'>
-              <Image src={monitorImg} width='300px' />
-            </div>
-            <div className='basis-1/2 flex'>
-              <p className="font-semibold text-2xl pr-12">3</p>
-              <div>
-                <h3 className="font-semibold text-2xl mb-2.5">Monitor Impact &amp; Returns</h3>
-                <p className='text-base'>Monitor the progress of projects, energy produced, carbon offset, and returns in real time with our intuitive dashboard</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-light-yellow py-16">
-          <div className='container mx-auto px-6'>
-            <div className='text-center'>
-              <h2 className='font-semibold text-5xl mb-2'>Our Projects</h2>
-              <p className='mb-12 max-w-sm mx-auto'>HeliosDAO works with experienced solar developers around the world to deploy capital into high impact, high return projects.</p>
+              <a className="text-purple" href="https://discord.gg/9sstTzZVFJ" target="_blank" rel="noopener noreferrer">Learn more</a>
             </div>
           </div>
           <div>
-            <div className='relative overflow-hidden'>
-              <div className='flex w-800 mx-auto max-w-full'>
-                <div className='px-10 min-w-full'>
-                  <div className='bg-white border border-solid rounded-md border-slate-200'>
-                    <Image src={imgProject1} width={800} height={451} />
-                    <div className='py-7 px-9'>
-                      <h3 className='font-semibold text-2xl'>Rooftop Solar in Pune</h3>
-                      <p className='mb-6'>Pune, Maharashtra, India</p>
-                      <p>Our solar installation in Pune provides clean energy for a mall-multiplex in addition to providing excess energy to the local grid. This 15 year power purchase agreement will reduce our customer&apos;s energy bill by 47% while preventing more than 1,000 tonnes of CO2 emissions per year. This initial installation serves as a proof of concept, demonstrating our ability to effectively deploy capital, build solar, and generate strong returns for our investors.</p>
-                    </div>
+            <Image src={planetImg} width={684} height={684} />
+          </div>
+        </section>
+        <section className='mt-32 container mx-auto max-w-5xl'>
+          <h2 className='text-3xl uppercase font-semibold text-center mb-8'>Make a difference with Defi</h2>
+          <div className='grid grid-cols-4 grid-gap-4 border-2 border-pink shadow-lg rounded-lg px-10 py-6'>
+            <div className='flex flex-col items-center'>
+              <Image src={weightImg} height={144} width={144} />
+              <h3 className='text-lg font-semibold'>42,000 KG</h3>
+              <p className=''>Emissions Averted</p>
+            </div>
+            <div className='flex flex-col items-center'>
+              <Image src={rocketImg} height={144} width={144} />
+              <h3 className='text-lg font-semibold'>$250,000</h3>
+              <p className=''>TVL</p>
+            </div>
+            <div className='flex flex-col items-center'>
+              <Image src={tickImg} height={144} width={144} />
+              <h3 className='text-lg font-semibold'>7</h3>
+              <p className=''>Projects Funded</p>
+            </div>
+            <div className='flex flex-col items-center'>
+              <Image src={walletImg} height={144} width={144} />
+              <h3 className='text-lg font-semibold'>$10,000</h3>
+              <p className=''>Returns Generated</p>
+            </div>
+          </div>
+        </section>
+        <div className='bg-blue-gradient'>
+          <div className='container mx-auto max-w-5xl'>
+            <section className='mt-32 flex flex-col items-center'>
+              <h2 className='text-3xl uppercase font-semibold text-center mb-8'>How it works</h2>
+              <p className='max-w-lg text-center'>We fund profitable solar projects around the world, averting millions of tonnes of CO2 emissions while earning market-leading yield. It's that simple.</p>
+              <ol className='mt-10'>
+                <li className='p-8 border-2 border-pink shadow-lg w-80 rounded-lg text-center'>
+                  <h3 className='text-lg mb-2 font-semibold'>1. Invest USDC</h3>
+                  <p>Deposit USDC into Solar Pools through Helios</p>
+                </li>
+                <li className='p-8 border-2 border-pink shadow-lg w-80 rounded-lg text-center mt-8'>
+                  <h3 className='text-lg mb-2 font-semibold'>2 Build Solar</h3>
+                  <p>Helios works with world-class solar developers to build high impact projects around the world.</p>
+                </li>
+                <li className='p-8 border-2 border-pink shadow-lg w-80 rounded-lg text-center mt-8'>
+                  <h3 className='text-lg mb-2 font-semibold'>3. Sell Clean Energy</h3>
+                  <p>Our installations sell clean energy to commercial customers backed by 20-year PPA contracts.</p>
+                </li>
+              </ol>
+            </section>
+            <section className='mt-32'>
+              <h2 className='text-3xl uppercase font-semibold mb-8'>Impact beyond energy</h2>
+              <div className='flex'>
+                <div className='w-2/3 rounded-lg aspect-[4/3] pb-4 px-6 flex flex-col place-content-end bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg2@2x.png")`}}>
+                  <h3 className='text-2xl uppercase font-semibold text-white'>Illuminating hospitals in Guatemala</h3>
+                  <p className='text-white'>Women should never have to go through childbirth in the dark. That’s why Helios is funding reliable solar for seven hospitals across the country.</p>
+                </div>
+                <div className='flex flex-col w-1/3 ml-4'>
+                  <div className='rounded-lg aspect-[4/3] pb-4 px-6 flex flex-col place-content-end mb-4 bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg1@2x.png")`}}>
+                    <h3 className='text-2xl uppercase font-semibold text-white'>Pune</h3>
+                    <p className='text-white'>We’re saving our commercial customers 47% on their energy bill. Less coal, more solar. </p>
+                  </div>
+                  <div className='rounded-lg aspect-[4/3] pb-4 px-6 flex flex-col place-content-end bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg@2x.png")`}}>
+                    <h3 className='text-2xl uppercase font-semibold text-white'>Kerala</h3>
+                    <p className='text-white'>The largest auto dealership in India trusts Helios to provide clean energy for dozens of locations. </p>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
         </div>
+        <div className='bg-pink-gradient'>
+          <div className='container mx-auto max-w-5xl'>
+            <section className='mt-32'>
+              <h2 className='text-3xl uppercase font-semibold text-center mb-8'>Our mission</h2>
+              <div className='flex'>
+                <p className='w-1/2 mr-8'>Helios aims to avert 10 million tons of CO2 by 2030. To achieve this ambitious goal, we’ll need the full support of the web3 community, united against the existential threat of our changing climate.</p>
+                <p className='w-1/2 ml-8'>Over the last decade, blockchain technology has matured from a theoretical solution to a fully fledged financial ecosystem. It’s time to use this technology for a cause worthy of its transformative power. Through Helios, crypto can save the world.</p>
+              </div>
+            </section>
+            <section className='mt-32 text-center'>
+              <p className='text-4xl mb-8 font-semibold'>“People feel hopeless in the fight against climate change. Helios provides the power to make a real difference”</p>
+              <p>William Skinner - CEO</p>
+            </section>
+            <section className='mt-32'>
+              <div className='flex items-center border-2 border-pink shadow-lg rounded-lg max-w-3xl py-20 px-16 mx-auto'>
+                <div>
+                  <Image src={logoBigImg} width={300} height={300} />
+                </div>
+                <div className='ml-10'>
+                  <h2 className="text-3xl uppercase font-semibold mb-4">Join our Discord</h2>
+                  <p className='mb-8'>Stay up to date on all the latest Helios updates by joining our community on Discord. </p>
+                  <div>
+                    <a className="text-white rounded-full bg-purple px-8 py-2" href="https://discord.gg/9sstTzZVFJ" target="_blank" rel="noopener noreferrer">Join Us</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <section className='flex items-center container mx-auto max-w-5xl mt-32'>
+          <div className='max-w-lg mr-10'>
+            <h1 className="text-6xl mb-4 uppercase font-semibold">Invest in solar projects around the world</h1>
+            <p className='mb-4'>Join us in funding high-impact projects making a real difference in the fight against climate change</p>
+            <div>
+              <a className="text-purple" href="https://discord.gg/9sstTzZVFJ" target="_blank" rel="noopener noreferrer">Learn more</a>
+            </div>
+          </div>
+          <div>
+            <Image src={planetImg} width={684} height={684} />
+          </div>
+        </section>
       </main>
 
-      <footer className='bg-dark-blue text-white'>
-        <div className="container mx-auto flex justify-between py-16 px-6">
-          <div>
-            <p>&copy; HeliosDAO</p>
-          </div>
-          <div>
-            <p className='text-right'>
-              team@helios.eco<br />
-              112 S Park St, San Francisco, CA 94107
-            </p>
-          </div>
+      <footer className='bg-purple-gradient-inverted mt-32 pb-10'>
+        <div className='container mx-auto flex items-center'>
+          <Image src={logoImg} width={72} height={72} />
+          <span className='ml-6'>Helios Copyright Limited</span>
         </div>
       </footer>
     </div>

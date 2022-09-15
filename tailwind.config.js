@@ -3,20 +3,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'light-yellow': 'rgba(254, 218, 62, 0.41)',
-        yellow: '#FEDA3E',
-        'dark-blue': '#14304D',
+        purple: '#C33CFF',
+        pink: 'rgba(245, 86, 213, 0.1)'
       },
       width: {
         '800': '800px',
       },
       backgroundImage: {
-        'yellow-gradient': 'radial-gradient(circle closest-side, rgb(252, 224, 79), rgb(255, 255, 255))'
+        'pink-gradient': 'linear-gradient(180deg, transparent 0%, rgba(249, 41, 160, 0.3) 50%, transparent 100%)',
+        'blue-gradient': 'linear-gradient(180deg, transparent 0%, rgba(14, 194, 252, 0.3) 50%, transparent 100%)',
+        'purple-gradient': 'linear-gradient(180deg, rgba(195, 60, 255, 0.3) 0%, transparent 100%)',
+        'purple-gradient-inverted': 'linear-gradient(180deg, transparent 0%, rgba(195, 60, 255, 0.3) 100%)'
       }
     },
     fontFamily: {
-      sans: ['Lexend', 'sans-serif'],
-      serif: ['Lexend', 'serif'],
+      sans: ['Cooper Hewitt', 'sans-serif'],
+      serif: ['serif'],
     },
   },
   plugins: [],
