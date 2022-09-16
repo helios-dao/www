@@ -20,14 +20,14 @@ const Home: NextPage = () => {
       </Head>
 
       <header className='bg-purple-gradient pt-10'>
-        <div className='container mx-auto flex items-center'>
+        <div className='container mx-auto flex items-center justify-center'>
           <Image src={logoImg} width={72} height={72} />
         </div>
       </header>
 
-      <main className="">
-        <section className='flex items-center container mx-auto max-w-5xl'>
-          <div className='max-w-lg mr-10'>
+      <main className="mt-20">
+        <section className='flex flex-col md:flex-row items-center container mx-auto max-w-5xl px-4 md:px-0'>
+          <div className='max-w-lg md:mr-10'>
             <h1 className="text-6xl mb-4 uppercase font-semibold">The evolution of solar, powered by crypto</h1>
             <p className='mb-4'>Helios enables anyone anywhere to profitably fight climate change. Fund high-impact solar projects around the world today!</p>
             <div>
@@ -38,9 +38,9 @@ const Home: NextPage = () => {
             <Image src={planetImg} width={684} height={684} />
           </div>
         </section>
-        <section className='mt-32 container mx-auto max-w-5xl'>
+        <section className='mt-32 container mx-auto max-w-5xl px-4 md:px-0'>
           <h2 className='text-3xl uppercase font-semibold text-center mb-8'>Make a difference with Defi</h2>
-          <div className='grid grid-cols-4 grid-gap-4 border-2 border-pink shadow-lg rounded-lg px-10 py-6'>
+          <div className='flex flex-col md:grid md:grid-cols-4 md:grid-gap-4 border-2 border-pink shadow-lg rounded-lg px-10 py-6'>
             <div className='flex flex-col items-center'>
               <Image src={weightImg} height={144} width={144} />
               <h3 className='text-lg font-semibold'>42,000 KG</h3>
@@ -64,10 +64,10 @@ const Home: NextPage = () => {
           </div>
         </section>
         <div className='bg-blue-gradient'>
-          <div className='container mx-auto max-w-5xl'>
+          <div className='container mx-auto max-w-5xl px-4 md:px-0'>
             <section className='mt-32 flex flex-col items-center'>
               <h2 className='text-3xl uppercase font-semibold text-center mb-8'>How it works</h2>
-              <p className='max-w-lg text-center'>We fund profitable solar projects around the world, averting millions of tonnes of CO2 emissions while earning market-leading yield. It's that simple.</p>
+              <p className='max-w-lg text-center'>We fund profitable solar projects around the world, averting millions of tonnes of CO2 emissions while earning market-leading yield. It&apos;s that simple.</p>
               <ol className='mt-10'>
                 <li className='p-8 border-2 border-pink shadow-lg w-80 rounded-lg text-center'>
                   <h3 className='text-lg mb-2 font-semibold'>1. Invest USDC</h3>
@@ -85,15 +85,15 @@ const Home: NextPage = () => {
             </section>
             <section className='mt-32'>
               <h2 className='text-3xl uppercase font-semibold mb-8'>Impact beyond energy</h2>
-              <div className='flex'>
-                <div className='w-2/3 rounded-lg aspect-[4/3] pb-4 px-6 flex flex-col place-content-end bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg2@2x.png")`}}>
+              <div className='flex flex-col md:flex-row'>
+                <div className='md:w-2/3 mb-4 md:mb-0 rounded-lg aspect-[4/3] pb-4 px-6 flex flex-col place-content-end bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg2@2x.png")`}}>
                   <h3 className='text-2xl uppercase font-semibold text-white'>Illuminating hospitals in Guatemala</h3>
-                  <p className='text-white'>Women should never have to go through childbirth in the dark. That’s why Helios is funding reliable solar for seven hospitals across the country.</p>
+                  <p className='text-white'>Women should never have to go through childbirth in the dark. That&apos;s why Helios is funding reliable solar for seven hospitals across the country.</p>
                 </div>
-                <div className='flex flex-col w-1/3 ml-4'>
+                <div className='flex flex-col md:w-1/3 md:ml-4'>
                   <div className='rounded-lg aspect-[4/3] pb-4 px-6 flex flex-col place-content-end mb-4 bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg1@2x.png")`}}>
                     <h3 className='text-2xl uppercase font-semibold text-white'>Pune</h3>
-                    <p className='text-white'>We’re saving our commercial customers 47% on their energy bill. Less coal, more solar. </p>
+                    <p className='text-white'>We&apos;re saving our commercial customers 47% on their energy bill. Less coal, more solar. </p>
                   </div>
                   <div className='rounded-lg aspect-[4/3] pb-4 px-6 flex flex-col place-content-end bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg@2x.png")`}}>
                     <h3 className='text-2xl uppercase font-semibold text-white'>Kerala</h3>
@@ -105,12 +105,12 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className='bg-pink-gradient'>
-          <div className='container mx-auto max-w-5xl'>
+          <div className='container mx-auto max-w-5xl px-4 md:px-0'>
             <section className='mt-32'>
               <h2 className='text-3xl uppercase font-semibold text-center mb-8'>Our mission</h2>
-              <div className='flex'>
-                <p className='w-1/2 mr-8'>Helios aims to avert 10 million tons of CO2 by 2030. To achieve this ambitious goal, we’ll need the full support of the web3 community, united against the existential threat of our changing climate.</p>
-                <p className='w-1/2 ml-8'>Over the last decade, blockchain technology has matured from a theoretical solution to a fully fledged financial ecosystem. It’s time to use this technology for a cause worthy of its transformative power. Through Helios, crypto can save the world.</p>
+              <div className='md:flex'>
+                <p className='md:w-1/2 md:mr-8'>Helios aims to avert 10 million tons of CO2 by 2030. To achieve this ambitious goal, we&apos;ll need the full support of the web3 community, united against the existential threat of our changing climate.</p>
+                <p className='md:w-1/2 md:ml-8'>Over the last decade, blockchain technology has matured from a theoretical solution to a fully fledged financial ecosystem. It&apos;s time to use this technology for a cause worthy of its transformative power. Through Helios, crypto can save the world.</p>
               </div>
             </section>
             <section className='mt-32 text-center'>
@@ -118,11 +118,11 @@ const Home: NextPage = () => {
               <p>William Skinner - CEO</p>
             </section>
             <section className='mt-32'>
-              <div className='flex items-center border-2 border-pink shadow-lg rounded-lg max-w-3xl py-20 px-16 mx-auto'>
-                <div>
+              <div className='flex flex-col md:flex-row items-center border-2 border-pink shadow-lg rounded-lg max-w-3xl py-20 px-16 mx-auto'>
+                <div className=''>
                   <Image src={logoBigImg} width={300} height={300} />
                 </div>
-                <div className='ml-10'>
+                <div className='mt-4 md:mt-0 md:ml-10'>
                   <h2 className="text-3xl uppercase font-semibold mb-4">Join our Discord</h2>
                   <p className='mb-8'>Stay up to date on all the latest Helios updates by joining our community on Discord. </p>
                   <div>
@@ -133,8 +133,8 @@ const Home: NextPage = () => {
             </section>
           </div>
         </div>
-        <section className='flex items-center container mx-auto max-w-5xl mt-32'>
-          <div className='max-w-lg mr-10'>
+        <section className='flex flex-col md:flex-row items-center container mx-auto max-w-5xl mt-32 px-4 md:px-0'>
+          <div className='max-w-lg md:mr-10'>
             <h1 className="text-6xl mb-4 uppercase font-semibold">Invest in solar projects around the world</h1>
             <p className='mb-4'>Join us in funding high-impact projects making a real difference in the fight against climate change</p>
             <div>
@@ -147,7 +147,7 @@ const Home: NextPage = () => {
         </section>
       </main>
 
-      <footer className='bg-purple-gradient-inverted mt-32 pb-10'>
+      <footer className='bg-purple-gradient-inverted mt-32 pb-10 px-4 md:px-0'>
         <div className='container mx-auto flex items-center'>
           <Image src={logoImg} width={72} height={72} />
           <span className='ml-6'>Helios Copyright Limited</span>
