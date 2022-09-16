@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('../public/fonts/CooperHewitt-Bold.otf') format('opentype');
+       font-weight: 800;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('../public/fonts/CooperHewitt-Semibold.otf') format('opentype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('../public/fonts/CooperHewitt-Book.otf') format('opentype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('../public/fonts/CooperHewitt-Medium.otf') format('opentype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
