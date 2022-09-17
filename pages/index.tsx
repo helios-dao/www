@@ -19,25 +19,26 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='bg-purple-gradient pt-10'>
-        <div className='container mx-auto flex items-center justify-center'>
-          <Image src={logoImg} width={72} height={72} />
-        </div>
-      </header>
-
-      <main className="mt-20">
-        <section className='flex flex-col md:flex-row items-center container mx-auto max-w-5xl px-4 md:px-0'>
-          <div className='max-w-lg md:mr-10'>
-            <h1 className="text-6xl mb-4 uppercase font-semibold">The evolution of solar, powered by crypto</h1>
-            <p className='mb-4'>Helios enables anyone anywhere to profitably fight climate change. Fund high-impact solar projects around the world today!</p>
-            <div>
-              <a className="text-purple" href="https://discord.gg/9sstTzZVFJ" target="_blank" rel="noopener noreferrer">Learn more</a>
+      <main className="">
+        <div className='bg-purple-gradient'>
+          <header className=' pt-10'>
+            <div className='container mx-auto flex items-center justify-center'>
+              <Image src={logoImg} width={72} height={72} />
             </div>
-          </div>
-          <div>
-            <Image src={planetImg} width={684} height={684} />
-          </div>
-        </section>
+          </header>
+          <section className='flex flex-col md:flex-row items-center container mx-auto max-w-5xl px-4 md:px-0 mt-10 md:mt-0'>
+            <div className='max-w-lg md:mr-10'>
+              <h1 className="text-6xl mb-4 uppercase font-semibold">The evolution of solar, powered by crypto</h1>
+              <p className='mb-4'>Helios enables anyone anywhere to profitably fight climate change. Fund high-impact solar projects around the world today!</p>
+              <div>
+                <a className="text-purple" href="https://discord.gg/9sstTzZVFJ" target="_blank" rel="noopener noreferrer">Learn more</a>
+              </div>
+            </div>
+            <div>
+              <Image src={planetImg} width={684} height={684} />
+            </div>
+          </section>
+        </div>
         <section className='mt-32 container mx-auto max-w-5xl px-4 md:px-0'>
           <h2 className='text-3xl uppercase font-semibold text-center mb-8'>Make a difference with Defi</h2>
           <div className='flex flex-col md:grid md:grid-cols-4 md:grid-gap-4 border-2 border-pink shadow-lg rounded-lg px-10 py-6'>
@@ -86,18 +87,24 @@ const Home: NextPage = () => {
             <section className='mt-32'>
               <h2 className='text-3xl uppercase font-semibold mb-8'>Impact beyond energy</h2>
               <div className='flex flex-col md:flex-row'>
-                <div className='md:w-2/3 mb-4 md:mb-0 rounded-lg aspect-[4/3] pb-4 px-6 flex flex-col place-content-end bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg2@2x.png")`}}>
-                  <h3 className='text-2xl uppercase font-semibold text-white'>Illuminating hospitals in Guatemala</h3>
-                  <p className='text-white'>Women should never have to go through childbirth in the dark. That&apos;s why Helios is funding reliable solar for seven hospitals across the country.</p>
+                <div className='md:w-2/3 mb-4 md:mb-0 rounded-lg aspect-[4/3] flex flex-col place-content-end bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg2@2x.png")`}}>
+                  <div className='bg-black-gradient pt-8 pb-4 px-6'>
+                    <h3 className='text-2xl uppercase font-semibold text-white'>Illuminating hospitals in Guatemala</h3>
+                    <p className='text-white'>Women should never have to go through childbirth in the dark. That&apos;s why Helios is funding reliable solar for seven hospitals across the country.</p>
+                  </div>
                 </div>
                 <div className='flex flex-col md:w-1/3 md:ml-4'>
-                  <div className='rounded-lg aspect-[4/3] pb-4 px-6 flex flex-col place-content-end mb-4 bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg1@2x.png")`}}>
-                    <h3 className='text-2xl uppercase font-semibold text-white'>Pune</h3>
-                    <p className='text-white'>We&apos;re saving our commercial customers 47% on their energy bill. Less coal, more solar. </p>
+                  <div className='rounded-lg aspect-[4/3] flex flex-col place-content-end mb-4 bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg1@2x.png")`}}>
+                    <div className='bg-black-gradient pt-8 pb-4 px-6'>
+                      <h3 className='text-2xl uppercase font-semibold text-white'>Pune</h3>
+                      <p className='text-white'>We&apos;re saving our commercial customers 47% on their energy bill. Less coal, more solar. </p>
+                    </div>
                   </div>
-                  <div className='rounded-lg aspect-[4/3] pb-4 px-6 flex flex-col place-content-end bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg@2x.png")`}}>
-                    <h3 className='text-2xl uppercase font-semibold text-white'>Kerala</h3>
-                    <p className='text-white'>The largest auto dealership in India trusts Helios to provide clean energy for dozens of locations. </p>
+                  <div className='rounded-lg aspect-[4/3] flex flex-col place-content-end bg-no-repeat bg-center bg-cover' style={{backgroundImage: `url("/bg@2x.png")`}}>
+                    <div className='bg-black-gradient pt-8 pb-4 px-6'>
+                      <h3 className='text-2xl uppercase font-semibold text-white'>Kerala</h3>
+                      <p className='text-white'>The largest auto dealership in India trusts Helios to provide clean energy for dozens of locations. </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -107,7 +114,7 @@ const Home: NextPage = () => {
         <div className='bg-pink-gradient'>
           <div className='container mx-auto max-w-5xl px-4 md:px-0'>
             <section className='mt-32'>
-              <h2 className='text-3xl uppercase font-semibold text-center mb-8'>Our mission</h2>
+              <h2 className='text-3xl uppercase font-semibold mb-8'>Our mission</h2>
               <div className='md:flex'>
                 <p className='md:w-1/2 md:mr-8'>Helios aims to avert 10 million tons of CO2 by 2030. To achieve this ambitious goal, we&apos;ll need the full support of the web3 community, united against the existential threat of our changing climate.</p>
                 <p className='md:w-1/2 md:ml-8'>Over the last decade, blockchain technology has matured from a theoretical solution to a fully fledged financial ecosystem. It&apos;s time to use this technology for a cause worthy of its transformative power. Through Helios, crypto can save the world.</p>
