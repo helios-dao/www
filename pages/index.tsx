@@ -14,8 +14,8 @@ const Home: NextPage = () => {
   return (
     <div className="bg-white">
       <Head>
-        <title>HeliosDAO</title>
-        <meta name="description" content="HeliosDAO: The evolution of solar, powered by crypto." />
+        <title>Helios</title>
+        <meta name="description" content="Helios: The evolution of solar, powered by crypto." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
